@@ -35,3 +35,14 @@ body {
   color: snow;
 }
 
+.hero {
+  width: 100%;
+  padding-bottom: 66.666666666667%;
+  background: url('/assets/desk.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar {
+  margin: 0;
+}
