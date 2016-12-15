@@ -28,6 +28,7 @@ a.navbar-brand {
 body {
   font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: url('/assets/extra_clean_paper.png');
+  font-size: 16px;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -101,3 +102,8 @@ input.btn {
   margin: 10px;
 }
 
+.label {
+  /*padding: 1em 3em 1.2em;*/
+  font-size: 1.25em;
+  background-color: #218F96;
+}
