@@ -11,15 +11,32 @@
     <%= number_to_currency @course.cost %>
     </span>
     
-    <% if current_user && current_user == @course.user %>
+   <%if current_user && current_user == @course.user %> 
       <br />
       <br />
-      <%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger btn-large' %>
-      <% end %>
+      <%= link_to 'Admin', instructor_course_path(@course), class: 'btn btn-danger btn-large' %>
+     <% end %>
   </div>
   <br class="clr"></br>
   <div class="col-xs-12 text-justify">
     <%= @course.description %>
   </div>
-
-</div>
+  <br />
+<hr />
+  <ul>
+    <% @course.sections.each do |section| %>
+      <li>
+        <%= section.title %>
+        <ul>
+          <% section.lessons.each do |lesson| %>
+            <li>
+              <b><%= lesson.title %></b>
+              -
+              <%= lesson.subtitle %>
+            </li>
+          <% end %>
+        </ul>
+        <br class="clr" />
+      </li>
+    <% end %>
+ </div>
