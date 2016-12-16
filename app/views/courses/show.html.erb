@@ -18,25 +18,28 @@
      <% end %>
   </div>
   <br class="clr"></br>
-  <div class="col-xs-12 text-justify">
-    <%= @course.description %>
-  </div>
-  <br />
-<hr />
-  <ul>
+  
+<div class="col-xs-12 text-justify">
+  <%= @course.description %>
+  <hr />
+</div>
+
+
+  <div class="col-xs-12">
     <% @course.sections.each do |section| %>
-      <li>
-        <%= section.title %>
-        <ul>
-          <% section.lessons.each do |lesson| %>
-            <li>
-              <b><%= lesson.title %></b>
-              -
-              <%= lesson.subtitle %>
-            </li>
+      <div class="section">
+        <b><%= section.title %></b>
+        <% section.lessons.each do |lesson| %>
+        <div class="lesson">
+          <%= link_to lesson_path(lesson) do %>
+          <%= lesson.title %>
+          -
+          <%= lesson.subtitle %>
           <% end %>
-        </ul>
-        <br class="clr" />
-      </li>
+          <hr/>
+        </div>
+        <% end %>
+      </div>
     <% end %>
- </div>
+</div>
+</div>
