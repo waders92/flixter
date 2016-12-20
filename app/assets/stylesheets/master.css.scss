@@ -109,3 +109,29 @@ input.btn {
   background-color: #218F96;
   border-radius: 0;
 }
+
+.lesson {
+  background-color: rgba(36,32,33,0.9);
+  margin-top: 10px;
+  height: 120px;
+  padding-top: auto;
+}
+
+.lesson a {
+  color: white;
+  text-decoration: none;
+  font-family: "Helvetica Neue",Helvetica;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.lesson a b {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.section {
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 20px;
+}
