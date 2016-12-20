@@ -43,6 +43,7 @@ gem 'figaro'
 gem 'fog'
 
 gem 'mini_magick', '~> 4.3.1'
+gem 'carrierwave-aws'
 
 # Use unicorn as the app server
 # gem 'unicorn'

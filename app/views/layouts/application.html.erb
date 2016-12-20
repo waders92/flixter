@@ -27,7 +27,7 @@
         <% if user_signed_in? %>
           <li><%= link_to 'Sign Out', destroy_user_session_path, :method=>'delete' %></li>
         <% else %>
-        <li><%= link_to 'Sign Up', new_user_registration_path %></li>  
+        <li><%= link_to 'Sign Up', new_user_registration_path %></li>
         <li><%= link_to 'Sign In', new_user_session_path %></li>
         <% end %>
         <li>
@@ -37,7 +37,7 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-  
+
 
 <% if notice.present? %>
   <p class="alert alert-info"><%= notice %></p>
@@ -46,13 +46,13 @@
 <% if alert.present? %>
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
-  
+
 <%= yield %>
 
 </div>
-  
+
   <br class="clr" />
-  
+
   <div id="footer">
     <div class="container">
       <b>Teachers</b>
@@ -60,7 +60,7 @@
       <%= link_to 'Teach a Course', new_instructor_course_path %>
     </div>
   </div>
-  
-  
+
+
 </body>
 </html>
