@@ -71,8 +71,12 @@ input.btn {
 
 .btn {
   border-radius: 0;
-  background-color: #1daf8c;
+  background-color: #0D3C94;
   border: none;
+}
+
+.learn {
+  background-color: #1daf8c;
 }
 
 .btn:hover {
@@ -134,4 +138,16 @@ input.btn {
   border: 1px solid;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding: 20px;
+}
+
+.enroll {
+  background-color: #349EC2;
+}
+
+.admin {
+  background-color: #BAB527;
+}
+
+.fee {
+  background-color: #1A8507;
 }

@@ -9,25 +9,23 @@
   <div class="col-xs-12 text-center">
     <h3 class="text-center">Fee:</h3>
       <br />
-      <span class="label label-default">
+      <span class="label label-default fee">
         <%= number_to_currency @course.cost %>
       </span>
 
       <%if current_user && current_user == @course.user %>
         <br />
         <br />
-      <%= link_to 'Admin', instructor_course_path(@course), class: 'btn btn-danger btn-large' %>
+      <%= link_to 'Admin', instructor_course_path(@course), class: 'btn btn-danger btn-lg admin' %>
      <% end %>
   </div>
   <br class="clr"></br>
-
-  <br />
 
   <div class ="col-xs-12 text-center">
     <% if current_user && current_user.enrolled_in?(@course) %>
       <h3 class="label label-info">You Are Enrolled!</h3>
     <% else %>
-      <%= link_to 'Enroll', course_enrollments_path(@course), class: 'btn btn-primary btn-lg', method: :post %>
+      <%= link_to 'Enroll', course_enrollments_path(@course), class: 'btn btn-primary btn-lg enroll', method: :post %>
     <% end %>
   </div>
 
