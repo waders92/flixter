@@ -21,7 +21,18 @@
   </div>
   <br class="clr"></br>
 
+  <br />
+
+  <div class ="col-xs-12 text-center">
+    <% if current_user && current_user.enrolled_in?(@course) %>
+      <h3 class="label label-info">You Are Enrolled!</h3>
+    <% else %>
+      <%= link_to 'Enroll', course_enrollments_path(@course), class: 'btn btn-primary btn-lg', method: :post %>
+    <% end %>
+  </div>
+
 <div class="col-xs-12 text-justify">
+  <br />
   <%= @course.description %>
   <hr />
 </div>
