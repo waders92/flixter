@@ -8,9 +8,9 @@ class VideoUploader < CarrierWave::Uploader::Base
 
   if Rails.env.development?
    storage :file
- else
+  else
    storage :aws
- end
+end
 
 
   # Override the directory where uploaded files will be stored.
