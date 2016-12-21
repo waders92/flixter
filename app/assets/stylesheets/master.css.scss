@@ -32,6 +32,15 @@ body {
   font-size: 16px;
 }
 
+body a {
+  color: #547052;
+}
+
+body a:hover {
+  text-decoration: none;
+  color: #6AC462;
+}
+
 .navbar-default .navbar-nav > li > a {
   color: snow;
 }
@@ -71,8 +80,12 @@ input.btn {
 
 .btn {
   border-radius: 0;
-  background-color: #0D3C94;
+  background-color: #175211;
   border: none;
+}
+
+.title {
+  color: #163613
 }
 
 .learn {
@@ -80,7 +93,7 @@ input.btn {
 }
 
 .btn:hover {
-  background-color: #3C4538;
+  background-color: #6AC462;
   color: snow;
 }
 
