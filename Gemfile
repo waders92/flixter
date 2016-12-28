@@ -47,6 +47,8 @@ gem 'carrierwave-aws'
 
 gem 'stripe'
 
+gem 'ranked-model'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
