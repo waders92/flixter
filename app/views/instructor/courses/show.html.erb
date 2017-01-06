@@ -35,7 +35,15 @@
   <div>
   <%= image_tag current_course.image, class: 'img-responsive' %>
   </div>
-  <br />
+<br />
+<div class="text-center">
+  <!-- Button trigger modal -->
+  <button class="btn btn-primary" data-toggle="modal" data-target="#newSectionModal">
+    Add a new section...
+  </button>
+</div>
+<br />
+
   <div class="text-center">
     <%= link_to 'Preview As Student...', course_path(current_course), class: 'btn btn-primary' %>
   </div>
@@ -78,4 +86,29 @@
     <% end %>
   </ul>
 
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="newSectionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="newSectionModal">Add a new section</h4>
+      </div>
+      <%= simple_form_for @section, url: instructor_course_sections_path(current_course) do |f| %>
+        <div class="modal-body">
+          <%= f.input :title %>
+          <br />
+          <br />
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        <%= f.submit "Add a section", class: 'btn btn-primary' %>
+      </div>
+      <% end %>
+    </div>
+  </div>
 </div>
