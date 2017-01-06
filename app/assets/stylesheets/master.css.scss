@@ -129,6 +129,7 @@ input.btn {
 
 .lesson {
   background-color: rgba(36,32,33,0.9);
+  font-family: "Helvetica Neue", Helvetica;
   margin-top: 10px;
   height: 120px;
   padding-top: auto;
@@ -139,12 +140,16 @@ input.btn {
   text-decoration: none;
   font-family: "Helvetica Neue",Helvetica;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .lesson a b {
   font-weight: 300;
-  font-size: 15px;
+  font-size: 20px;
+}
+
+.lesson a:hover {
+  color: #B1BA50;
 }
 
 .section {
