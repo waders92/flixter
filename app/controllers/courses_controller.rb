@@ -9,5 +9,5 @@ class CoursesController < ApplicationController
     @image = Image.new
   end
 
-  
+
 end
