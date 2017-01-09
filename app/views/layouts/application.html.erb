@@ -59,11 +59,47 @@
 
   <div id="footer">
     <div class="container">
-      <b>Teachers</b>
+      <div class="col-xs-12 col-sm-3">
+        <b>Teachers</b>
+        <br />
+        <%= link_to 'Teach a Course', new_instructor_course_path %>
+        <br />
+        <%= link_to 'My Dashboard', dashboard_path %>
+      </div>
+    <div class="col-xs-12 col-sm-3">
+      <b>About</b>
       <br />
-      <%= link_to 'Teach a Course', new_instructor_course_path %>
+      <%= link_to 'Team', '#' %>
+      <br />
+      <%= link_to 'Careers', '#' %>
+      <br />
+      <%= link_to 'Privacy Policy', '#' %>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <b>Contact</b>
+      <br />
+      wade.carlson@pga.com
+      <br />
+      3747 E. Carpenter Ave.
+      <br />
+      Cudahy, WI 53110
+    </div>
+    <div class="col-xs-12 col-sm-3 social">
+      <b>Social</b>
+      <br />
+      <br />
+      <%= link_to 'http://github.com/waders92', :target=> "_blank" do %>
+        <%= image_tag 'git1.png', class: 'socialbtn' %>
+      <%end %>
+      <%= link_to 'http://facebook.com/wadecarlson1974', :target=> "_blank" do %>
+        <%= image_tag 'fb1.png', class: 'socialbtn' %>
+      <% end %>
+      <%= link_to 'http://twitter.com/wadecarlsonpga', :target=> "_blank" do %>
+        <%= image_tag 'twitter1.png', class: 'socialbtn' %>
+      <% end %>
     </div>
   </div>
+</div>
 
 
 </body>
