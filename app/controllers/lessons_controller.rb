@@ -2,7 +2,7 @@ class LessonsController < ApplicationController
     before_action :authenticate_user!
   def show
     if !current_user.enrolled_in?(current_lesson.section.course) && current_lesson.section.course.user != current_user
-        redirect_to course_path(current_lesson.section.course), alert: 'You must be enrolled in this course!'
+        redirect_to course_path(current_lesson.section.course), alert: 'You must be enrolled to view this course!'
         end
   end
 
