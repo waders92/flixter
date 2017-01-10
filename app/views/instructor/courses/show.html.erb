@@ -41,17 +41,17 @@
     <br />
 <div class="text-center">
   <!-- Button trigger modal -->
-  <button class="btn btn-primary" data-toggle="modal" data-target="#newSectionModal">
+  <button class="btn btn-success" data-toggle="modal" data-target="#newSectionModal">
     Add a new section...
   </button>
 </div>
 <br />
   <div class="text-center">
-    <%= link_to 'Add a new course...', new_instructor_course_path(current_course), class: 'btn btn-primary' %>
+    <%= link_to 'Add a new course...', new_instructor_course_path(current_course), class: 'btn btn-success' %>
   </div>
     <br />
     <div class="text-center">
-      <%= link_to 'Preview as Student..', course_path(current_course), class: 'btn btn-primary' %>
+      <%= link_to 'Preview as Student..', course_path(current_course), class: 'btn btn-success' %>
     </div>
 
   <br />
@@ -63,7 +63,7 @@
               <%= section.title %>
           </div>
           <!-- Button trigger modal -->
-            <button class="btn btn-primary pull-right new-lesson-button" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%= instructor_section_lessons_path(section) %>">
+            <button class="btn btn-success pull-right new-lesson-button" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%= instructor_section_lessons_path(section) %>">
               Add a new lesson...
             </button>
         <br class="clr" />
