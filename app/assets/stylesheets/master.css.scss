@@ -33,12 +33,12 @@ body {
 }
 
 body a {
-  color: #547052;
+  color: black;
 }
 
 body a:hover {
   text-decoration: none;
-  color: #6AC462;
+  color: #A3A10F;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .frosty h2 {
-  font-family: 'loveloblack';
+  font-family: 'Cinzel', serif;
   text-shadow: rgba(0,0,0,0.95)1px 1px;
 }
 
@@ -209,4 +209,14 @@ hr {
 
 .icons3 {
   height: 95px;
+}
+
+
+.group {
+  height: 200px;
+}
+
+.group {
+  display: block;
+  margin: auto;
 }
