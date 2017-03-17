@@ -1,4 +1,4 @@
-== README
+== Hack 2 Scratch (Flixter)
 
 Flixter is part of the Firehose curriculum
 
