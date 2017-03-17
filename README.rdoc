@@ -10,5 +10,7 @@ Firehose project work.
 
 * jQuery and Ajax for lesson drag and drop and re-ordering in the database
 
+* Stripe for enrollments
+
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
