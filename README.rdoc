@@ -1,6 +1,6 @@
 == README
 
-Firehose project work.
+Flixter is a Firehose project designed in Ruby.
 
 * Two sided video streaming marketplace platform
 
