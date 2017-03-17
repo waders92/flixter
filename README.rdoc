@@ -1,6 +1,6 @@
 == README
 
-Flixter is a Firehose project designed in Ruby.
+Flixter is part of the Firehose curriculum
 
 * Two sided video streaming marketplace platform
 
@@ -10,6 +10,6 @@ Flixter is a Firehose project designed in Ruby.
 
 * jQuery and Ajax for lesson drag and drop and re-ordering in the database
 
-* Stripe for enrollments
+* Stripe for student enrollments
 
 
